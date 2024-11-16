@@ -1,5 +1,6 @@
 @use 'functions' as f;
 @use 'sass:math';
+@use 'sass:map';
 
 // Based on: https://chriskirknielsen.com/blog/modern-fluid-typography-with-clamp/
 @mixin fs-fluid($min-vw, $max-vw, $min-value, $max-value) {
@@ -16,13 +17,13 @@ $breakpoints: (
 );
 
 @mixin breakpoint($size) {
-  @media (width >= map-get($breakpoints, $size)) {
+  @media (width >= map.get($breakpoints, $size)) {
     @content;
   }
 }
 
 @mixin breakpoint-down($size) {
-  @media (width < map-get($breakpoints, $size)) {
+  @media (width < map.get($breakpoints, $size)) {
     @content;
   }
 }
