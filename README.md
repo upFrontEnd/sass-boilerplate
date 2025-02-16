@@ -2,7 +2,3 @@
 
 # SASS Project Starter
 
-<a href="https://sass-boilerplate.netlify.app" target="_blank">
-    <img src="./img/screen.jpg" />
-<a>
-
